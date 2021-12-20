@@ -1,0 +1,147 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{enumerate}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{parskip}
+\usepackage{setspace}
+\usepackage{dcolumn}
+\usepackage{hyperref}
+\hypersetup{pdfstartpage=1,
+            pdfpagemode=UseNone,
+            pdfstartview=FitH,
+            pdffitwindow=true,
+            bookmarks=false,
+            colorlinks=true,
+            urlcolor=blue,
+            linkcolor=blue,
+            citecolor=blue}
+\usepackage[top=1in,bottom=1in,left=1in,right=1in]{geometry}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage{afterpage}
+
+\pagestyle{fancy}
+\fancyhead{} % clear all header fields
+\fancyfoot{} % clear all footer fields
+\fancyhead[L]{Latner}
+\fancyhead[C]{Income volatility and mobility}
+\fancyhead[R]{Page \thepage\  of \pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\fancypagestyle{firststyle}
+{
+   \fancyhead{}
+   \fancyfoot{}
+}
+
+\begin{document}
+
+\begin{center}
+\large Income volatility and mobility: A conceptual exploration of two frameworks \\
+\bigskip
+\normalsize
+Jonathan P. Latner $^{a}$\\
+\end{center}
+
+{\bf  Abstract}
+
+This paper explores two frameworks for measuring income volatility using data from the Panel Study of Income Dynamics. The permanent income framework measures volatility as the standard deviation of income change in a study period, which classifies all change in income as volatile. The income trend framework measures volatility as the standard deviation of income change from an individual's own income trend line, which distinguishes the amount from the direction of income change. Results from a hierarchical linear model suggest that a large proportion of income volatility is explained by the income trend line. Results from a fixed effects model suggests that the distribution of income volatility by the direction of the trend line is unequal. Declining income is more volatile than rising income. 
+
+{\bf  Keywords:} income inequality; income volatility; income mobility
+
+Please cite as: Latner, Jonathan (2018).  ``Income volatility and mobility: A conceptual exploration of two frameworks.'' \emph{Research in Social Stratification and Mobility}, 53:50-63
+
+\vfill
+
+------------------------ \\
+\footnotesize
+$^{a}$ Corresponding Author: Jonathan P. Latner.  E-mail:  \url{jonlatner@gmail.com}\\
+The author wishes to acknowledge the following individuals for their help throughout the entire process (in alphabetical order):  Charlotte Bartels, Deirdre Bloome, Jan Br{\"u}lle, David Calnitsky, Karen Dynan, Martin Ehlert, Markus Gangl, Ted Gerber, Pilar Gonalons-Pons, Eric Grodsky, Steffen Hillmert, Markus J{\"a}ntti, Ulrich Kohler, Iryna Kyzyma, Richard Latner, Robert Moffitt, Jonathan Morduch, Ellen Pechman, Jody Schimek, Tim Smeeding, Leann Tigges, Scott Winship, and the anonymous reviewers.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%TABLES
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\section{Tables}
+
+\begin{table}[htp!]
+\centering
+\caption{Descriptive statistics} 
+\centering
+\resizebox{\textwidth}{!}{\input{../tables/descriptives_ind_src.tex}}
+\label{descriptives}
+\end{table}
+
+\begin{table}[!ht]
+\caption{Determinants of income volatility, parameter estimates from HLM models with random intercepts}
+\begin{center}
+\resizebox{\textwidth}{!}{\input{../tables/mixed_ind_src}}
+\label{mixed}
+\end{center}
+\end{table}
+
+\begin{table}[!ht]
+\caption{Determinants of income volatility with different measures of volatility, parameter estimates from fixed effects models}
+\begin{center}
+\resizebox{\textwidth}{!}{\input{../tables/fe_regression_src}}
+\label{regression}
+\end{center}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%FIGURES
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\section{Figures}
+
+\begin{figure}[htp!]
+    \caption{Examples of income, volatility, and direction} 
+    \label{examples}
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{../graphs/example_1.png}
+        \caption{No income change}
+        \label{examples_sub1}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{../graphs/example_2.png}
+        \caption{Mean reverting}
+        \label{examples_sub2}
+    \end{subfigure}
+        \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{../graphs/example_3.png}
+        \caption{Linear}
+        \label{examples_sub3}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{../graphs/example_psid.png}
+        \caption{Curvilinear}
+        \label{examples_sub4}
+    \end{subfigure}
+\end{figure}
+
+\begin{figure}[htp!]
+\centering
+\caption{Income volatility over time with different measures of volatility} 
+\centering
+\resizebox{\textwidth}{!}{\includegraphics{../graphs/volatility_graph_src.png}}
+\label{volatility_graph}
+\end{figure}
+
+\begin{figure}[htp!]
+\centering
+\caption{Predicted income volatility by income mobility from table \ref{regression}} 
+\centering
+\resizebox{\textwidth}{!}{\includegraphics{../graphs/margins_ind_src_apc_w_o_cube.png}}
+\label{margins_mobility}
+\end{figure}
+
+\end{document}
+
