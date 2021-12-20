@@ -2,8 +2,6 @@
 
 [![DOI:10.7910/DVN/U0RTXA](http://img.shields.io/badge/DOI-10.7910/DVN/I8QMVS.425840-B31B1B.svg)](https://doi.org/10.7910/DVN/I8QMVS)
 
-<a target="_tab" rel="noopener noreferrer" href="https://doi.org/10.7910/DVN/I8QMVS">Link</a>
-
 ## Introduction
 
 Repository for the codes used for the analyses of Jonathan Latner (2018), "Income volatility and mobility: A conceptual exploration of two frameworks."
