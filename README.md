@@ -2,7 +2,7 @@
 
 [![DOI:10.7910/DVN/U0RTXA](http://img.shields.io/badge/DOI-10.7910/DVN/I8QMVS.425840-B31B1B.svg)](https://doi.org/10.7910/DVN/I8QMVS)
 
-<a href="https://www.WordPress.com" target="_blank">WordPress Homepage</a>
+<p>Check out <a href="https://www.freecodecamp.org/">freeCodeCamp</a>.</p>
 
 ## Introduction
 
