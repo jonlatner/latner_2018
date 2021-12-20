@@ -2,7 +2,7 @@
 
 [![DOI:10.7910/DVN/U0RTXA](http://img.shields.io/badge/DOI-10.7910/DVN/I8QMVS.425840-B31B1B.svg)](https://doi.org/10.7910/DVN/I8QMVS)
 
-<p>Check out <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">freeCodeCamp</a>.</p>
+<a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.7910/DVN/I8QMVS">Link</a>
 
 ## Introduction
 
